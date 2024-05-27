@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sklep</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="content-wrap">
+            <header>
+                <div class="nav-close">X</div>
+                <nav id="nav">
+                    <div class="menu-toggle">☰ Menu</div>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="rejestracja.php">Rejestracja</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="calculator.html">Kalkulator</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <form id="kupnoForm" action="zapisz_zakupy.php" method="post">
+                    <h2 class="animated-text">Sklep</h2>
+                    <label for="zboze"
+                           >Zboże (5pln/szt.):</label>
+                    <input
+                        type="number"
+                        id="zboze"
+                        name="zboze"
+                        value="0"
+                        step="1"
+                    /><br />
+
+                    <label for="drewno"
+                        >Drewno(10pln/szt.):</label
+                    >
+                    <input
+                        type="number"
+                        id="drewno"
+                        name="drewno"
+                        value="0"
+                        step="1"
+                    /><br />
+
+                    <label for="kamien"
+                           >Kamień (15pln/szt.):</label
+                    >
+                    <input
+                        type="number"
+                        id="kamien"
+                        name="kamien"
+                        value="0"
+                        step="1"
+                    /><br />
+
+                    <input
+                        type="button"
+                        value="Oblicz"
+                        onclick="obliczStawke()"
+                    />
+
+                    <p>Do zapłaty: <span id="wynik">0</span> PLN</p>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 Jakub Pielichowski Jeremiasz Roskowiński . All rights reserved.</p>
+        </footer>
+
+        <script src="scripts.js"></script>
+        <script src="scripts1.js"></script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularz Kontaktowy</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="content-wrap">
+            <header>
+                <div class="nav-close">X</div>
+                <nav id="nav">
+                    <div class="menu-toggle">☰ Menu</div>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="rejestracja.php">Rejestracja</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="calculator.html">Sklep</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+        <form action="send_mail.php" method="post">
+            <label for="name">Imię:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Wiadomość:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Wyślij">
+        </form>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 Jakub Pielichowski Jeremiasz Roskowiński . All rights reserved.</p>
+        </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>
